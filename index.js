@@ -65,7 +65,7 @@ allRides.forEach(async ([id, value]) => {
           scrollWheelZoom: false,
      });
      map.setView([firstPosition.latitude, firstPosition.longitude], 13);
-     L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
+     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
           minZoom: 5,
           maxZoom: 18,
           ext: 'png',
